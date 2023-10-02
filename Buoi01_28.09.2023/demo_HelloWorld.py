@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 print("Hello world")
 
 number1 = 10
@@ -20,3 +21,6 @@ print(type(lst2))
 
 lst3 = {"model": "Toyota", "year":2023, "color": "red"}
 print(type(lst3))
+=======
+print("Hello World")
+>>>>>>> 60a8e990205509380b4b9276324b953d593b6f28
