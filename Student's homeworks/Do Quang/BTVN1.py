@@ -5,11 +5,10 @@ b = int(input('canh cua tam giac b = '))
 print(' canh cua tam giac :',b)
 c = int(input('canh cua tam giac c = '))
 print(' canh cua tam giac :',c)
-
-s = (a*b)/2
 if(a + b) > c and (b + c) > a and (a + c) > b:
     p = (a+b+c)/2
     S = math.sqrt(p*(p-a)*(p-b)*(p-c))
+    s = (a*b)/2
     if a == b and b == c:
         print('day la tam giac deu va co dien tich la:', S)
     elif a == b or a == c or b == c :
@@ -20,3 +19,4 @@ if(a + b) > c and (b + c) > a and (a + c) > b:
         print('day la tam giac thuong va co dien tich la:', S)
 else:
     print('day khong phai la 3 canh cua tam giac')    
+# test lll
