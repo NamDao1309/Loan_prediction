@@ -86,4 +86,4 @@ while dem < N:
         dem += 1
     number += 1
 
-print("Tổng các số nguyên tố nhỏ hơn N là:", tong)
+print("Tổng N số nguyên tố đầu tiên là:", tong)
