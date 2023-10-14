@@ -68,19 +68,64 @@
 print("Đáp án bài số 2: C - C - B - B - A - C - B - C")
 
 #bài 2.1
-import math
+# import math
 
-a = float(input("nhập cạnh thứ nhất: "))
-b = float(input("Nhập cạnh thứ hai: "))
-c = float(input("Nhập cạnh thứ ba: "))
-if (a<b+c and b<a+c and c<b+a):
-    if a**2 == b**2 + c**2:
-        print("S = ", b*c/2)
-    if b**2 == a**2 + c**2:
-        print("S = ", a*c/2)
-    if c**2 == a**2 + b**2:
-        print("S = ", a*b/2)
-    p = (a+b+c)/2
-    S = math.sqrt((p-a)*(p-b)*(p-c))
-    print("S = ",S)
-print("ko phải là tam giác")
+# a = float(input("nhập cạnh thứ nhất: "))
+# b = float(input("Nhập cạnh thứ hai: "))
+# c = float(input("Nhập cạnh thứ ba: "))
+# if (a<b+c and b<a+c and c<b+a):
+#     if a**2 == b**2 + c**2:
+#         print("S = ", b*c/2)
+#     if b**2 == a**2 + c**2:
+#         print("S = ", a*c/2)
+#     if c**2 == a**2 + b**2:
+#         print("S = ", a*b/2)
+#     else:
+#         p = (a+b+c)/2
+#         S = math.sqrt((p-a)*(p-b)*(p-c))
+#         print("S = ",S)
+# else:
+#     print("ko phải là tam giác")
+
+#bài 2.2
+# num2 = int(input("Nhập một số bất kỳ từ 0-10: "))
+# if (num2>=0 and num2<=10):
+#     if (num2 == 2):
+#         print("Thứ 2")
+#     elif (num2 == 3):
+#         print('Thứ 3')
+#     elif (num2 ==4):
+#         print('Thứ 4')
+#     elif (num2 == 5):
+#         print('Thứ 5')
+#     elif (num2 == 6):
+#         print('Thứ 6')
+#     elif (num2 == 7):
+#         print('Thứ 7')
+#     elif (num2 == 8):
+#         print('Chủ Nhật')
+#     else:
+#         print ('Không là ngày trong tuần')
+# print('không thỏa mãn điều kiện đầu bài')
+
+#Bài 2.3
+# num3 = int(input('Nhập một số bất kỳ từ 1-12: '))
+# month_30 = [4,6,9,11]
+# if (num3 >= 1 and num3 <= 12):
+#     if (num3 == 2):
+#         print('Tháng ',num3, ' có 28 hoặc 29 ngày')
+#     elif(num3 in month_30):
+#         print('Tháng ', num3, ' có 30 ngày')
+#     else:
+#         print('Tháng ',num3,' có 31 ngày')
+
+#Bài 2.4
+num = [1,3,4,5]
+Max = 0
+a = 0
+for i in range (0,4):
+    num[i] = input('Nhập số thứ ',i)
+for i in range (0,4):
+    if (num[i] > Max):
+        Max = num[i]
+print('Số lớn nhất: ',Max)
