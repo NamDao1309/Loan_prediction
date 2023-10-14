@@ -40,11 +40,11 @@ print(str2.split(";"))
 
 
 # Bai 01 : 
-# Kiểm tra tính hợp lệ của mật khẩu (là một giá trị string). 
-# Mật khẩu hợp lệ nếu:
-# Có ít nhất 6 kí tự
-# Chứa ít nhất một chữ cái (a-z hoặc A-Z)
-# Chứa ít nhất một chữ số (0-9)
+Kiểm tra tính hợp lệ của mật khẩu (là một giá trị string). 
+Mật khẩu hợp lệ nếu:
+Có ít nhất 6 kí tự
+Chứa ít nhất một chữ cái (a-z hoặc A-Z)
+Chứa ít nhất một chữ số (0-9)
 
 password = input("Nhập pasword")
 
