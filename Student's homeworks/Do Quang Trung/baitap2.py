@@ -53,14 +53,34 @@
 
 
 #In các số chia hết cho 3 từ 1 đến 100
-z = 1
-s=""
-while (z<=100):
-    if(z%3==0):
-        #print(z," ")
-        s = s + str(z) + " "
-    z = z +1
+# z = 1
+# s=""
+# while (z<=100):
+#     if(z%3==0):
+#         #print(z," ")
+#         s = s + str(z) + " "
+#     z = z +1
 
-print(s)
+# print(s)
 
 
+# đáp án btap về nhà
+print("Đáp án bài số 2: C - C - B - B - A - C - B - C")
+
+#bài 2.1
+import math
+
+a = float(input("nhập cạnh thứ nhất: "))
+b = float(input("Nhập cạnh thứ hai: "))
+c = float(input("Nhập cạnh thứ ba: "))
+if (a<b+c and b<a+c and c<b+a):
+    if a**2 == b**2 + c**2:
+        print("S = ", b*c/2)
+    if b**2 == a**2 + c**2:
+        print("S = ", a*c/2)
+    if c**2 == a**2 + b**2:
+        print("S = ", a*b/2)
+    p = (a+b+c)/2
+    S = math.sqrt((p-a)*(p-b)*(p-c))
+    print("S = ",S)
+print("ko phải là tam giác")
