@@ -120,12 +120,10 @@ print("Đáp án bài số 2: C - C - B - B - A - C - B - C")
 #         print('Tháng ',num3,' có 31 ngày')
 
 #Bài 2.4
-num = [1,3,4,5]
 Max = 0
 a = 0
-for i in range (0,4):
-    num[i] = input('Nhập số thứ ',i)
-for i in range (0,4):
-    if (num[i] > Max):
-        Max = num[i]
+for i in range (0,3):
+    num = int(input('Nhập số thứ ',i, ' '))
+    if (num > Max):
+        Max = num
 print('Số lớn nhất: ',Max)
