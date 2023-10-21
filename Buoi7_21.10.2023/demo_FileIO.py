@@ -17,5 +17,18 @@ file.writelines(
 )
 file.close()
 
-# Bai tap 01 : Đếm số dòng của file mbox-short.txt
-# Bài tập 02 : Đếm tổng tất cả các ký tự trong file 
+# Bài tập 01 : Đếm số dòng của file mbox-short.txt
+# Bài tập 02 : Tìm kiếm tất cả các dòng bắt đầu 
+# là "From:"
+# Bài tập 03 : Lọc tất cả các email có định dạng
+# X#Y.Z và lưu vào 1 list, remove các email duplicate
+
+# DEMO JSON
+import json
+x = '{"name" : "John","age" : 30,"city" : "New York" }'
+
+# parse ison file
+y = json.loads(x)
+
+# print result
+print(y["age"])
