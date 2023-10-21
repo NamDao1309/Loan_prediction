@@ -32,3 +32,10 @@ y = json.loads(x)
 
 # print result
 print(y["age"])
+
+# Read file json
+json_file_path = "VIETECH_DA_28.09.2023//Buoi7_21.10.2023//user.json"
+with open(json_file_path) as user_file:
+    file_content = user_file.read()
+
+print(file_content)
