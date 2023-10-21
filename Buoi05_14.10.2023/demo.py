@@ -108,16 +108,19 @@ text = 'Một năm có mười hai tháng, tháng hai có hai mươi tám ngày,
 # bai 2:
 n = int(input("Nhập vào số m3 nước: "))
 tien_nuoc = {}
-if (n > 0 and n < 10):
+if (n > 0 and n <= 10):
     tien_nuoc['Hóa đơn tiền nước: '] = n * 5973
-elif (n > 10 and n < 20):
+elif (n > 10 and n <= 20):
     tien_nuoc['Hóa đơn tiền nước: '] = (10 * 5973) + (n - 10) * 7052
-elif (n > 20 and n < 30):
+elif (n > 20 and n <= 30):
     tien_nuoc['Hóa đơn tiền nước: '] = (10 * 5973) + (10 * 7052) + (n - 20) * 8669
 else:
     tien_nuoc['Hóa đơn tiền nước: '] = (10 * 5973) + (10 * 7052) + (10 * 8669) + (n - 30) * 15929
 
 print(tien_nuoc)
+
+#bai 3:
+
 
 
 
