@@ -1,0 +1,7 @@
+Nếu chưa tồn tại tập tin: tạo tập tin và ghi nội dung vào
+Nếu đã tồn tại tập tin: ghi nội dung vào cuối tập tin tin, xuống dòng
+Hỏi người dùng có muốn tiếp tục ghi nữa hay không? Người dùng chọn 1: có,
+chọn 0: không
+Nếu chọn 1: yêu cầu người dùng nhập nội dung => ghi nội dung vào cuối tập
+tin, xuống dòng
+Nếu chọn 0: kết thúc chương trình
