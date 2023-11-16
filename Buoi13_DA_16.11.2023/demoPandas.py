@@ -97,10 +97,18 @@ import numpy as np
 # Load file in Dataframe
 txt_path = 'GITHUB//VIETECH_DA_28.09.2023//Buoi13_DA_16.11.2023//data.txt'
 excel_path = 'GITHUB//VIETECH_DA_28.09.2023//Buoi13_DA_16.11.2023//demo.xlsx'
+csv_path = 'GITHUB//VIETECH_DA_28.09.2023//Buoi13_DA_16.11.2023//Automobile_data.csv'
 
 df_txt = pd.read_csv(txt_path, sep=',')
 #print(df_txt)
 
 df_excel = pd.read_excel(excel_path)
 print(df_excel)
-print("Rowx Column :",  df_excel.shape)
+
+df_csv = pd.read_csv(csv_path)
+print(df_csv)
+print("RowxColumn: ", df_csv.shape)
+print("Index :", df_csv.index)
+print("Column :", df_csv.columns)
+print("Info :", df_csv.info())
+print("Describe :", df_csv.describe())
