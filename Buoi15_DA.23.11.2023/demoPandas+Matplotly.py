@@ -8,6 +8,6 @@ csv_path ="VIETECH_DA_28.09.2023//Buoi15_DA.23.11.2023//hocsinh.csv"
 df1 = pd.read_csv(csv_path)
 print(df1)
 
-dta_path = "VIETECH_DA_28.09.2023//Buoi15_DA.23.11.2023//cars.dta"
+dta_path = "VIETECH_DA_28.09.2023//Buoi15_DA.23.11.2023//stata//Global_morbidity_Japan.dta"
 df2 = pd.read_stata(dta_path)
 print(df2)
