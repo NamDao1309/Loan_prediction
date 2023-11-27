@@ -1,0 +1,5 @@
+setup.py
+packagePrime.egg-info/PKG-INFO
+packagePrime.egg-info/SOURCES.txt
+packagePrime.egg-info/dependency_links.txt
+packagePrime.egg-info/top_level.txt
