@@ -17,26 +17,9 @@ from sqlalchemy import create_engine
 import pymysql
 import csv
 
-csv_path = ""
-sqlEngine = create_engine('mysql+pymysql://root:admin123@127.0.0.1/demo',
-                           pool_recycle= 3306 )
+sqlEngine = create_engine('mysql+pymysql://root:Admin123@127.0.0.1/demo2', pool_recycle= 3306 )
 dbConnection  = sqlEngine.connect()
 df = pd.read_sql("SELECT * FROM users",dbConnection)
 print(df)
-df.to_csv("C://CONGVIEC//2023//TEACHER//4.7.VIETECH_DA_28.09.2023//GITHUB//VIETECH_DA_28.09.2023//Buoi15_DA.23.11.2023//myDB.csv")
-
-print("rows x columns :", df.shape)
-print("index :", df.index)
-# list name column
-print("column name :", df.columns)
-print("Info on dataframe :", df.info())
-print("Describe Dataframe :", df.describe())
-print("Get number of non-NA values :", df.count())
-print("Get sum of values :", df.sum())
-print("get cummulative sum of values :", df.cumsum())
-print("Min:", df.min())
-print("Min:", df.max())
-
-
 dbConnection.close()
 
