@@ -55,3 +55,25 @@ s3 = pd.Series([7, -2, 3], index=['a', 'c', 'd'])
 print(s+s3)
 s1 = s.add(s3, fill_value=0)
 print(s1)
+
+# Read file CSV, TXT, EXCEL
+
+csv_path = "Buoi08.06.12.2023\Automobile_data.csv"
+df_csv = pd.read_csv(csv_path)
+print(df_csv)
+print("Rowx Column:", df_csv.shape )
+print("Index:", df_csv.index )
+print("Column:", df_csv.columns )
+print("Info:", df_csv.info() )
+print("Describe:", df_csv.describe() )
+
+
+excel_path = "Buoi08.06.12.2023\demo.xlsx"
+df_excel = pd.read_excel(excel_path)
+print(df_excel)
+
+txt_path = "Buoi08.06.12.2023\data.txt"
+df_txt =pd.read_csv(txt_path, sep=',')
+print(df_txt)
+print("5 first rows :", df_txt.head(5))
+print("5 last rows :", df_txt.tail(5))
