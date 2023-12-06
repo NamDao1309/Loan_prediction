@@ -54,3 +54,50 @@ print(arr_full.size)
 
 #ndim
 print(arr_full.ndim)
+
+# slicing
+print(arr2)
+# print(arr2[:2, 1:3])
+# print(arr2[0, 1])
+# print(arr2[1, :])
+
+print(arr2[arr2 > 5])
+
+# Array math
+x = np.array([[1, 2],[3, 4]], dtype=np.float64)
+y = np.array([[5, 6], [7, 8]], dtype=np.float64)
+# print(x + y)
+# print(np.add(x, y))
+
+# print(x - y)
+# print(np.subtract(x, y))
+
+# print(np.multiply(x, y))
+# print(np.divide(x, y))
+# print(np.sqrt(x))
+
+# print(x)
+# print(y)
+# print(x.dot(y))
+# print(x.sum())
+# print(x.sum(axis=0))
+# print(x.sum(axis=1))
+
+# print(x.max())
+# print(x.max(axis=0))
+# print(x.max(axis=1))
+
+# print(x.min())
+# print(x.min(axis=0))
+# print(x.min(axis=1))
+
+print(y)
+print(y.mean())
+print(y.mean(axis=0))
+print(y.mean(axis=1))
+
+z =np.array([[1,3,5],[4,7,9]])
+print(z)
+print(np.median(z))
+
+
