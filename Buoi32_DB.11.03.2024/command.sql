@@ -151,5 +151,55 @@ select * from courses;
 select count(*) from courses
 group by course_name;
 
+-- VIEWS 
+use demo;
+create table customers( customerNumber int(10) not null auto_increment,
+						customerName varchar(255),
+                        contactLastName varchar(255),
+                        contactFirstName varchar(255),
+                        phone varchar(13),
+                        addressLine1 varchar(255),
+                        addressLine2 varchar(255),
+                        city varchar(15),
+                        state varchar(255),
+                        postalCode int(10),
+                        country varchar(20),
+                        salesRepEmployeeNumber int(10),
+                        creditLimit double,
+                        primary key(customerNumber));
+                        
+create table payments(customerNumber int(10) not null,
+						checkNumber int(10),
+                        paymentDate datetime,
+                        amount double,
+                        primary key(customerNumber));
+                        
+                        
+                        
+insert into customers( customerName, contactLastName, contactFirstName,
+                        phone, addressLine1, addressLine2, city, state,
+                postalCode, country, salesRepEmployeeNumber, creditLimit) 
+values("Tran Quoc Tuan", "Tran Quoc", "Tuan", "098653231", "Ha Noi 1",
+		"Ha Noi 02", "Dong Bac Bo", NULL ,100000, "Viet Nam", 2123, 400000.0);
+        
+insert into customers( customerName, contactLastName, contactFirstName,
+                        phone, addressLine1, addressLine2, city, state,
+                postalCode, country, salesRepEmployeeNumber, creditLimit) 
+values("Le Binh Kiem", "Le Binh", "Khiem", "0986532656", "Ha Noi 3",
+		"Ha Noi 04", "Dong Bac Bo",NULL, 101000, "Thai Lan", 2126, 4100000);
+        
+insert into customers( customerName, contactLastName, contactFirstName,
+                        phone, addressLine1, addressLine2, city, state,
+                postalCode, country, salesRepEmployeeNumber, creditLimit) 
+values("Hoang Dao Thuy", "Hoang Dao", "Thuy", "098653788", "Ha Noi 5",
+		"Ha Noi 06", "Tay Bac Bo", NULL,  104000, "CamPuchia", 2176, 4700000);
 
 
+insert into payments(customerNumber, checkNumber, paymentDate, amount)
+values(2, 334, "2024:12:10 13:13:13", 5600000);
+
+insert into payments(customerNumber, checkNumber, paymentDate, amount)
+values(3, 676, "2024:10:10 10:10:10", 6900000);
+
+insert into payments(customerNumber, checkNumber, paymentDate, amount)
+values(4, 334, "2024:09:10 12:12:12", 4500000);
