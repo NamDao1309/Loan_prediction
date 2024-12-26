@@ -1,5 +1,0 @@
-setup.py
-pkprime.egg-info/PKG-INFO
-pkprime.egg-info/SOURCES.txt
-pkprime.egg-info/dependency_links.txt
-pkprime.egg-info/top_level.txt
